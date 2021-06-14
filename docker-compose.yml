@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  development_environment:
+    container_name: "development_environment_container"
+    build:
+      context: "."
+      dockerfile: "./development_environment/Dockerfile"
+    ports:
+      - "8888:8888"
+    volumes:
+      - ".:/usr/src/app"
