@@ -3,5 +3,4 @@
 docker compose down
 docker compose up -d --build
 
-sleep 3
-docker logs development_environment_container
+docker logs -f development_environment_container
