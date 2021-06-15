@@ -11,5 +11,4 @@ RUN pip install -r requirements.txt
 
 FROM dependency_preparation
 EXPOSE 8888
-RUN ls -la
 ENTRYPOINT ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
