@@ -15,8 +15,18 @@ There should be 2 directories.
    ```bash
    $ ./run.sh
    ```
-2. Play on Jupyter notebook named `Project_1B_ Project_Template`
-3. To bring those containers down
+2. Wait until `cassandra_db` is ready. If it is ready, there will be Jupyter notebook URL to be open in web browser. Use a URL of IP `127.0.0.1`.
+   ```
+   [C 16:12:08.763 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///root/.local/share/jupyter/runtime/nbserver-9-open.html
+    Or copy and paste one of these URLs:
+        http://development_environment:8888/?token=xxxxxxxxxxxxxxx
+     or http://127.0.0.1:8888/?token=xxxxxxxxxxxxxxx
+   ```
+3. Play on Jupyter notebook named `Project_1B_ Project_Template`
+4. To bring those containers down
    ```bash
    $ docker compose down
    ```
